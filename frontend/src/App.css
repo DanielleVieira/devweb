@@ -11,21 +11,24 @@
     display: flex;
     gap: 3rem;
     padding: 2rem 1rem 1rem;
-    background-color: lightblue;
+    background-color: #5b7a99;
+    color: white;
 }
 
 .container-pesquisa {
     margin-left: auto;
+    position: relative;
 }
 
 .nav-item {
-    background-color: rgb(173, 216, 230);
+    background-color: #5b7a99;
     padding: 1rem;
-    color: black;
+    color: white;
 }
 
 .nav-item:hover {
-    background-color: rgb(180, 220, 250);
+    background-color: lightblue;
+    color: black;
 }
 
 .nav-item:link {

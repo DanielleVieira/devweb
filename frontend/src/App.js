@@ -13,9 +13,7 @@ function App() {
           <a className="nav-item" href="#">Cadastrar História</a>
         </nav>
 
-        <div className="container-pesquisa">
-          <Pesquisa></Pesquisa>
-        </div>
+        <Pesquisa className="container-pesquisa"/>
         
       </header>
     </div>
