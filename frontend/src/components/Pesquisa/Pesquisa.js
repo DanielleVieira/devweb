@@ -25,7 +25,7 @@ function Pesquisa(props) {
                 <input type="text" name="input-pesquisa" placeholder=" Pesquisa ..."></input>
             </form>
             
-            { pesquisaAtiva ?  <div className="container-resultado-pesquisa">
+            { pesquisaAtiva ?  <div className="listagem-pesquisa">
                 {
                     resultadoPesquisa.length === 0 ? 
                     <span className="item-pesquisa"> Não encontramos nenhuma fic, sorry 🥲 </span> :

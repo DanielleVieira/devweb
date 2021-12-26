@@ -1,34 +1,46 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-.App {
-    border: 1px solid red;
-    box-sizing: border-box;
-}
+
 
 .header {
     display: flex;
+    align-items: stretch;
     gap: 3rem;
-    padding: 2rem 1rem 1rem;
+    border-top: 12pt solid #135e70;
+    border-bottom: 1px solid #135e70;
     background-color: #5b7a99;
     color: white;
 }
 
-.container-pesquisa {
+@media(max-width: 500px) {
+    .header {
+        display: flex;
+        flex-flow: column;    
+    }
+}
+
+.pesquisa {
     margin-left: auto;
     position: relative;
+
+}
+
+.container-logo {
+    padding: 1rem;
+}
+
+.nav {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
 }
 
 .nav-item {
     background-color: #5b7a99;
+    color: #fff;
     padding: 1rem;
-    color: white;
 }
 
 .nav-item:hover {
-    background-color: lightblue;
-    color: black;
+    background-color: #135e70;
 }
 
 .nav-item:link {
