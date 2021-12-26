@@ -1,11 +1,14 @@
+import './ItemPesquisa.css';
 
 function ItemPesquisa(props) {
     return (
-        <div className={props.className}>
+        <a className={props.className} href={props.url}>
             <img src={props.img}/>
-            <p>{props.titulo}</p>
-            <p>{props.autor}</p>
-        </div>
+            <div>
+                <p>{props.titulo}</p>
+                <p>Por: {props.autor}</p>
+            </div>
+        </a>
     );
 }
 

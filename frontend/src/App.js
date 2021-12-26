@@ -23,9 +23,9 @@ function App() {
       <main className="main">
         
       </main>
-      <filter className="filter">
+      <div className="filter">
       
-      </filter>
+      </div>
       <aside className="aside">
         
       </aside>
