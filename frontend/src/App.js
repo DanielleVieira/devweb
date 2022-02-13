@@ -1,8 +1,22 @@
 import './App.css';
 import './layout.css';
 import Pesquisa from './components/Pesquisa/Pesquisa';
+import React, {useState, useEffect} from "react";
 
 function App() {
+  const [historias, setHistorias] = useState([]);
+  
+  useEffect(() => {
+    async function fetchData() {
+        let resposta = await fetch('http://localhost:3001/api/v1/historias');
+        console.log(resposta);
+        let historias = await resposta.json();
+        setHistorias(historias);
+    }
+    fetchData();
+  }, []);
+  
+
   return (
     <div className="App">
       <header className="header">
@@ -17,7 +31,7 @@ function App() {
           <a className="nav-item" href="#">Outro link</a>
         </nav>
 
-        <Pesquisa className="pesquisa"/>
+        <Pesquisa className="pesquisa" historias={historias}/>
         
       </header>
       <main className="main">

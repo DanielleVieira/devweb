@@ -11,29 +11,7 @@ function Pesquisa(props) {
         if(inputValue === '') {
             setResultadoPesquisa([]);
         } else {
-            
-            //Dados de exemplo. Falta implementar a função que pega os dados do backend
-            const dados = [
-                {
-                    url: "#",
-                    img: "https://poltronanerd.com.br/wp-content/uploads/2020/09/one-piece.jpg",
-                    titulo: "Uma história de One Piece",
-                    autor: "Alguém"
-                },
-                {
-                    url: "#",
-                    img: "https://poltronanerd.com.br/wp-content/uploads/2020/09/one-piece.jpg",
-                    titulo: "Outra história de One Piece",
-                    autor: "Alguém"
-                },
-                {
-                    url: "#",
-                    img: "https://poltronanerd.com.br/wp-content/uploads/2020/09/one-piece.jpg",
-                    titulo: "Mais uma história de One Piece",
-                    autor: "Alguém"
-                }
-            ];
-            const resultado = dados.filter((valor) => {return valor.titulo.toLowerCase().includes(inputValue.toLowerCase())});
+            const resultado = props.historias.filter((valor) => {return valor.titulo.toLowerCase().includes(inputValue.toLowerCase())});
             setResultadoPesquisa(resultado);
         }
     };
