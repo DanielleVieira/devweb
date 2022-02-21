@@ -4,7 +4,7 @@
     display: flex;
     align-items: stretch;
     gap: 3rem;
-    border-top: 12pt solid #135e70;
+    border-top: 10pt solid #135e70;
     border-bottom: 1px solid #135e70;
     background-color: #5b7a99;
     color: white;
@@ -45,4 +45,9 @@
 
 .nav-item:link {
     text-decoration: none;
+}
+
+.main h2 {
+    margin: 1rem;
+    color: #135e70;
 }

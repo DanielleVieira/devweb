@@ -1,16 +1,16 @@
 
 
-a {
+.item-pesquisa {
     display: flex;
     gap: 5px;
     margin: 2px;
 }
 
-a:link {
+.item-pesquisa:link {
     text-decoration: none;
 }
 
-img {
+.item-pesquisa img {
     height: 50px;
     width: 50px;
 }

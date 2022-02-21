@@ -2,6 +2,7 @@ import './App.css';
 import './layout.css';
 import Pesquisa from './components/Pesquisa/Pesquisa';
 import React, {useState, useEffect} from "react";
+import ListagemBanner from './components/Listagem/ListagemBanner';
 
 function App() {
   const [historias, setHistorias] = useState([]);
@@ -35,7 +36,10 @@ function App() {
         
       </header>
       <main className="main">
-        
+        <section>
+          <h2>Encontre as melhores Fanfics</h2>
+          <ListagemBanner className="listagem-banner" listaItens={historias}/>
+        </section>
       </main>
       <div className="filter">
       

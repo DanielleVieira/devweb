@@ -1,15 +1,16 @@
 import React from "react";
-import Item from "./Item/Item";
+import Item from "./ItemPesquisa/ItemPesquisa";
+import "./ListagemPesquisa.css";
 
 
-function Listagem(props) {
+function ListagemPesquisa(props) {
     const listaItens = props.listaItens;
     
     return(
         <div className={props.className}>
             {
                 listaItens.slice(0,10).map((historia) => 
-                <Item className="item-lista" 
+                <Item className="item-pesquisa" 
                     img={historia.img} 
                     titulo={historia.titulo} 
                     autor={historia.autor}
@@ -21,4 +22,4 @@ function Listagem(props) {
     
 }
 
-export default Listagem;
+export default ListagemPesquisa;

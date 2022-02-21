@@ -1,7 +1,7 @@
 import React from "react";
-import './Item.css';
+import './ItemPesquisa.css';
 
-function Item(props) {
+function ItemPesquisa(props) {
     return (
         <a className={props.className} href={props.url}>
             <img src={props.img}/>
@@ -13,4 +13,4 @@ function Item(props) {
     );
 }
 
-export default Item;
+export default ItemPesquisa;

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './Pesquisa.css';
-import Listagem from "../Listagem/Listagem";
+import ListagemPesquisa from "../Listagem/ListagemPesquisa";
 
 function Pesquisa(props) {
     
@@ -24,7 +24,7 @@ function Pesquisa(props) {
             <input type='search' 
             onChange={(e) => handleChange(e.target.value)}>
             </input>
-            <Listagem listaItens={pesquisa()} className='listagem-pesquisa'></Listagem>
+            <ListagemPesquisa listaItens={pesquisa()} className='listagem-pesquisa'/>
         </div>
     );
 
