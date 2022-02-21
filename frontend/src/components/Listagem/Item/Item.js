@@ -1,6 +1,7 @@
-import './ItemPesquisa.css';
+import React from "react";
+import './Item.css';
 
-function ItemPesquisa(props) {
+function Item(props) {
     return (
         <a className={props.className} href={props.url}>
             <img src={props.img}/>
@@ -12,4 +13,4 @@ function ItemPesquisa(props) {
     );
 }
 
-export default ItemPesquisa;
+export default Item;
