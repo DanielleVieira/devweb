@@ -4,8 +4,13 @@ import Pesquisa from './components/Pesquisa/Pesquisa';
 import React, {useState, useEffect} from "react";
 import ListagemBanner from './components/Listagem/ListagemBanner';
 
+
+const temaContext = React.createContext();
+
 function App() {
   const [historias, setHistorias] = useState([]);
+  const [tema, setTema] = useState("white");
+
   
   useEffect(() => {
     async function fetchData() {
@@ -19,6 +24,8 @@ function App() {
   
 
   return (
+    <temaContext.Provider value={{"tema": tema}}>
+
     <div className="App">
       <header className="header">
         <div className="container-logo">
@@ -31,11 +38,13 @@ function App() {
           <a className="nav-item" href="#">Outro link</a>
           <a className="nav-item" href="#">Outro link</a>
         </nav>
+        
+        <button onClick={()=>setTema(tema === "white" ? "black" : "white")}>Tema</button>
 
         <Pesquisa className="pesquisa" historias={historias}/>
         
       </header>
-      <main className="main">
+      <main className="main" style={{"background-color": tema}}>
         <section>
           <h2>Encontre as melhores Fanfics</h2>
           <ListagemBanner className="listagem-banner" listaItens={historias}/>
@@ -51,7 +60,9 @@ function App() {
         
       </footer>
     </div>
+    </temaContext.Provider>
   );
 }
 
 export default App;
+export {temaContext};
