@@ -41,7 +41,7 @@ function App() {
         
         <button onClick={()=>setTema(tema === "white" ? "black" : "white")}>Tema</button>
 
-        <Pesquisa className="pesquisa" historias={historias}/>
+        <div className='pesquisa-container'><Pesquisa className="pesquisa" historias={historias}/></div> 
         
       </header>
       <main className="main" style={{"background-color": tema}}>

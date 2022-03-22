@@ -1,4 +1,11 @@
 
 .listagem-pesquisa {
     background-color: white;
+    position: absolute;
+    margin: 2px;
+    z-index: 9999;
+    border: solid 1px gray;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 10pt;
 }

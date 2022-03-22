@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 
 const historias = [
     {
-        img: 'https://criticalhits.com.br/wp-content/uploads/2021/07/one-piece-celebration-1276637-1280x0-1-910x472.jpeg',
+        img: 'https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png',
         titulo: 'Uma história de One Piece',
         autor: 'Sou um pirata',
         resumo: 'Era uma vez um garoto que queria ser o rei dos piratas ...',
@@ -22,13 +22,31 @@ const historias = [
         id: '1'
     },
     {
-        img: 'https://geeksaw.com.br/wp-content/uploads/2016/12/dragonballsuper.jpg',
+        img: 'https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png',
         titulo: 'Uma história de Dragon Ball',
         autor: 'I am a alien',
         resumo: 'Era uma vez um garoto que queria ser mais forte ...',
         texto: ["Capítulo 1 ...", "Capítulo 2 ..."],
         tags: ['slice of life', 'drama'],
         id: '2'
+    },
+    {
+        img: 'https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png',
+        titulo: 'Uma história de Kuroko no Basket',
+        autor: 'Sou um jogador',
+        resumo: 'Era uma vez um garoto que queria ser o blá blá blá ...',
+        texto: ["Capítulo 1 ...", "Capítulo 2 ..."],
+        tags: ['shounen', 'action', 'sport'],
+        id: '3'
+    },
+    {
+        img: 'https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png',
+        titulo: 'Uma história de Qualquer Coisa',
+        autor: 'I am a alien',
+        resumo: 'Era uma vez um garoto que queria ser mais forte ...',
+        texto: ["Capítulo 1 ...", "Capítulo 2 ..."],
+        tags: ['slice of life', 'drama'],
+        id: '4'
     }
 ];
 

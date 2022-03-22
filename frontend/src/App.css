@@ -8,6 +8,7 @@
     border-bottom: 1px solid #135e70;
     background-color: #5b7a99;
     color: white;
+    height: 70px;
 }
 
 @media(max-width: 500px) {
@@ -17,10 +18,11 @@
     }
 }
 
-.pesquisa {
+.pesquisa-container {
     margin-left: auto;
-    position: relative;
-
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .container-logo {
