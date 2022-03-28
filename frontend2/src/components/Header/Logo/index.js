@@ -1,12 +1,13 @@
 import React from 'react';
+import logo from '../../../assets/logo.png';
+import './style.css';
 
 const Logo = () => {
     return (
         <>
-            <span>
-                {/* <img src='logo.png' alt="Imagem do Logo"/> */}
-                <span>Tsuki</span>
-                <span>Fanfiction</span>
+            <span className='logo'>
+                <img className='logo-img' src={logo} alt="Imagem do Logo"/>
+                <span>TsukiFanfiction</span>
             </span>
         </>
     );

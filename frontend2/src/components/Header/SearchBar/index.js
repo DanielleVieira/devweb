@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SearchItem from "./SearchItem";
+import './style.css';
 
 const SearchBar = (props) => {
     
@@ -34,7 +35,7 @@ const SearchBar = (props) => {
             <input type='search' 
             onChange={(e) => handleChange(e.target.value)}>
             </input>
-            <ul>
+            <ul className="sb-list">
             {
                 search().slice(0,10).map((fic) => 
                     <li key={`sh-${fic.id}`}>

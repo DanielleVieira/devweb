@@ -1,0 +1,19 @@
+.sb-item {
+    padding: 0.8rem;
+    width: 177px;
+    margin-top: 0.2rem;
+    background-color: white;
+    
+}
+
+.sb-item-img {
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.sb-item-text {
+    border: solid 1px whitesmoke;
+    color: #222;
+}

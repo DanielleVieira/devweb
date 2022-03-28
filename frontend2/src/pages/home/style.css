@@ -1,0 +1,63 @@
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.pres-container {
+    background-image: url('../../assets/press-background.jpg');
+    background-repeat: round;
+    overflow: hidden;
+    color: whitesmoke;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.hm-filters {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    margin: 1rem;
+}
+
+.hm-list {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.hm-list-item {
+    width: 45%;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 5px;
+    border: #5b7a99 solid 1px;
+    box-shadow: 0 0 10px gray;
+}
+
+.hm-list-item:hover {
+    transform: scale(1.05); 
+}
+
+
+.hm-title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.hm-description {
+    text-align: center;
+    margin: 1rem;
+}

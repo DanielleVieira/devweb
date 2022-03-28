@@ -1,0 +1,10 @@
+.bn-item {
+    color: #222;
+}
+
+.bn-img {
+    height: 20%;
+    width: 20%;
+    float: left;
+    margin-right: 0.5rem;
+}

@@ -1,9 +1,10 @@
 import React from "react";
+import './style.css';
 
 function BannerItem(props) {
     return (
-        <a href={props.url}>
-            <img src={props.img} alt='Imagem de elemento do banner de fanfics'/>
+        <a className="bn-item" href={props.url}>
+            <img className="bn-img" src={props.img} alt='Imagem de elemento do banner de fanfics'/>
             <div>
                 <h3>{props.title}</h3>
                 <p>{props.resume}</p>

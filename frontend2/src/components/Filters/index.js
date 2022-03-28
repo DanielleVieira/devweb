@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Filter from './Filter';
-// import './Filters.css';
+import './style.css';
 
 const Filters = (props) => {
   // const [result, setResult] = useState([]);
@@ -51,7 +51,7 @@ const Filters = (props) => {
   
   return (
     <>
-      <form>
+      <form className='ft-container'>
         <Filter 
           name='Categoria' 
           id='ft-category' 
@@ -77,7 +77,7 @@ const Filters = (props) => {
           onChange={setSelectedStatus}
         />
       </form>
-      <button onClick={handleClick}>Aplicar Filtros</button>
+      <button className='ft-buttom' onClick={handleClick}>Aplicar Filtros</button>
     </>
   );
 };

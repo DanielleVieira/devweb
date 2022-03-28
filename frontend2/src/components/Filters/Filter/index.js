@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 
 const Filter = (props) => {
     const handleChange = (set) => {
@@ -15,7 +16,7 @@ const Filter = (props) => {
     
     return (
         <>
-        <select name={props.name} id={props.id} onChange={() => {handleChange(props.onChange)}}>
+        <select className='ft-item' name={props.name} id={props.id} onChange={() => {handleChange(props.onChange)}}>
             <option value={props.name}>{props.name}</option>
             {props.options.map((option) => {
                 return<option key={`ft-${option}`} value={option}>{option}</option>

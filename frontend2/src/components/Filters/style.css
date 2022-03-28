@@ -1,0 +1,13 @@
+.ft-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.ft-buttom {
+    width: 100%;
+    height: 30px;
+    margin-top: 0.1rem;
+    border-radius: none;
+    font-size: 1rem;
+}

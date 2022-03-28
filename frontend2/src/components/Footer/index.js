@@ -1,16 +1,24 @@
 import React from "react";
+import './style.css';
 
 const Footer = () => {
     return (
         <>
             <footer>
-                <p>Obrigado pelo apoio!</p>
-                <ul>
-                    <li><a href='https://github.com/DanielleVieira/devweb'>GitHub</a></li>
-                </ul>
+                <article className="foo-links">
+                    <p>Obrigado pelo apoio!</p>
+                    <ul className="foo-list">
+                        <li><a href='https://github.com/DanielleVieira/devweb' 
+                        target="_blank"
+                        rel="noreferrer">GitHub</a></li>
+                        <li><a href='https://www.youtube.com/' 
+                        target="_blank"
+                        rel="noreferrer">Youtube</a></li>
+                    </ul>
+                </article>
                 <p>
                   &copy; {new Date().getFullYear()}{" "}
-                  OTAKUS TECH
+                  Danielle Vieira
                 </p>
             </footer>
         </>
