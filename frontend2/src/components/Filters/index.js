@@ -3,7 +3,7 @@ import Filter from './Filter';
 // import './Filters.css';
 
 const Filters = (props) => {
-  const [result, setResult] = useState([]);
+  // const [result, setResult] = useState([]);
   const [categorys, setCategorys] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
   const [fandoms, setFandoms] = useState([]);
@@ -12,6 +12,7 @@ const Filters = (props) => {
   const [selectedGenre, setSelectedGenre] = useState('');
   const [status, setStatus] = useState([]);
   const [selectedStatus, setSelectedStatus] = useState('');
+  const setResult = props.setResult;
 
   useEffect(() => {
     (async () => {
@@ -42,8 +43,9 @@ const Filters = (props) => {
   const handleClick = () => {
     (async () => {
       const resul = await fetch(`http://localhost:5000/api/v1/filtros/historias?categoria=${selectedCategory}&fandom=${selectedFandom}&genero=${selectedGenre}&status=${selectedStatus}`);
-      const historias = await resul.json();
-      setResult(historias);
+      const fanfictions = await resul.json();
+      console.log(fanfictions);
+      setResult(fanfictions);
     })();
   }
   
@@ -74,7 +76,6 @@ const Filters = (props) => {
           options={status}
           onChange={setSelectedStatus}
         />
-        <div>{console.log(result)}</div>
       </form>
       <button onClick={handleClick}>Aplicar Filtros</button>
     </>
