@@ -1,5 +1,5 @@
 # Aviso Importante
-O frontend inicialmente estava sendo implementado na pasta frontend, onde implementei até a semana 8 (react context). Porém, para resolver alguns erros que estavam ocorrendo reiniciei a implementação na pasta frontend2. O frontend finalizado será o da pasta **frontend2**, mas decidi manter as duas pastas para não perder o histórico de commites.
+O frontend inicialmente estava sendo implementado na pasta frontend, onde implementei até a semana 8 (react context). Porém, para resolver alguns erros que estavam ocorrendo reiniciei a implementação na pasta frontend2. O frontend finalizado será o da pasta **frontend2**, mas decidi manter as duas pastas, por enquanto, para não perder o histórico.
 
 # Tsuki Fanfiction
 Este é um site dedicado ao compartilhamento e leitura de fanfictions e histórias originais.
