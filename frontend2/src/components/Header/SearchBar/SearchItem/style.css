@@ -14,6 +14,6 @@
 }
 
 .sb-item-text {
-    border: solid 1px whitesmoke;
+    border: solid 1px var(--emphasis-text-color);
     color: #222;
 }

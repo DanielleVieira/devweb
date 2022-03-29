@@ -1,7 +1,7 @@
 .ft-item {
     height: 35px;
     border-radius: none;
-    background-color: #172b4d;
-    color: whitesmoke;
+    background-color: var(--emphasis-color);
+    color: var(--emphasis-text-color);
     font-size: 1rem;
 }

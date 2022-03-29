@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Filters from "../../components/Filters";
 import BannerItem from "../../components/BannerItem";
+import ThemaContext from "../../components/ThemaButtom/ThemaContext";
 import './style.css';
 
 const Home = () => {
     const [fanfics, setFanfics] = useState([]);
+    const contextThema = useContext(ThemaContext);
 
     useEffect(() => {
         async function fetchData() {
@@ -20,7 +22,7 @@ const Home = () => {
     return (
         <>
             <Header/>
-            <main className="main">
+            <main className="main" style={{background: contextThema.thema}}>
                 <section className="pres-container">
                     <h1 className="hm-title">Tsuki Fanfiction</h1>
                     <section>

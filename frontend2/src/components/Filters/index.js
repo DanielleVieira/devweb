@@ -77,7 +77,7 @@ const Filters = (props) => {
           onChange={setSelectedStatus}
         />
       </form>
-      <button className='ft-buttom' onClick={handleClick}>Aplicar Filtros</button>
+      <button className='ft-button' onClick={handleClick}>Aplicar Filtros</button>
     </>
   );
 };

@@ -7,7 +7,7 @@
     background-image: url('../../assets/press-background.jpg');
     background-repeat: round;
     overflow: hidden;
-    color: whitesmoke;
+    color: var(--emphasis-text-color);
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -42,11 +42,13 @@
     padding: 1rem;
     border-radius: 5px;
     border: #5b7a99 solid 1px;
-    box-shadow: 0 0 10px gray;
+   
+    background-color: white;
 }
 
 .hm-list-item:hover {
     transform: scale(1.05); 
+    box-shadow: 0 0 10px gray;
 }
 
 
@@ -55,6 +57,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 5rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem #222;
 }
 
 .hm-description {
